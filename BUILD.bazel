@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+
+package(
+    default_visibility = [
+        "//private/devices/google:__subpackages__",
+    ],
+)
