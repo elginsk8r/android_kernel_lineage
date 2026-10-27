@@ -42,6 +42,15 @@ kernel_selection(
             package = "//common/ack",
         ),
         kernel_package(
+            name = "gki",
+            aliases = ["@//aosp-with-prebuilts"],
+            package = "//common/gki",
+            prebuilt_repos = {
+                "kernel_aarch64": "download_or_build",
+                "kernel_aarch64_16k": "download_or_build",
+            },
+        ),
+        kernel_package(
             name = "lts",
             aliases = ["@//aosp-lts"],
             package = "//common/lts",
